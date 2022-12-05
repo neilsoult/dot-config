@@ -45,15 +45,15 @@ style = "bold green"
 
 [git_status]
 format = '[\($all_status$ahead_behind\)]($style) '
-style = "bold green"
-conflicted = "🏳"
-up_to_date = " "
-untracked = " "
+style = "bold white"
+conflicted = "[🏳](red)"
+up_to_date = "[ ](green)"
+untracked = "[ ](009)"
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
 stashed = " "
-modified = " "
+modified = "[ ](202)"
 staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
