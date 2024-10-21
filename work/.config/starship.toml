@@ -55,7 +55,7 @@ behind = "⇣${count}"
 stashed = "󰏗 "
 modified = " "
 staged = '[++\($count\)](green)'
-renamed = "襁 "
+renamed = "󰖷 "
 deleted = " "
 
 [nodejs]
