@@ -5,7 +5,7 @@
 # make sure your font is compatible with https://github.com/lukas-w/font-logos
 
 case $_distro in
-    *kali*)                  ICON="ﴣ";;
+    *kali*)                  ICON="󰠥";;
     *arch*)                  ICON="";;
     *debian*)                ICON="";;
     *raspbian*)              ICON="";;
@@ -26,7 +26,7 @@ case $_distro in
     *devuan*)                ICON="";;
     *manjaro*)               ICON="";;
     *rhel*)                  ICON="";;
-    *macos*)                 ICON="";;
+    *macos*)                 ICON="󰀵";;
     *)                       ICON="";;
 esac
 
