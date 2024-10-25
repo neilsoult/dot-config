@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# apt
+sudo apt-get update && sudo apt-get install git zsh wget unzip curl
 # Git
 cp ./.gitconfig ~
 # Oh My Zsh!
