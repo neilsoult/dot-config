@@ -6,7 +6,7 @@ source $ZSH/oh-my-zsh.sh
 [[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
 
 # keychain
-/usr/bin/keychain --nogui ~/.ssh/id_ed25519
-source ~/.keychain/$(hostname)-sh
+#/usr/bin/keychain --nogui ~/.ssh/id_ed25519
+#source ~/.keychain/$(hostname)-sh
 
 eval "$(starship init zsh)"
