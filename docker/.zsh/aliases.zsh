@@ -1,10 +1,10 @@
 # Alias
 # ---
-alias a="ansible"
-alias ap="ansible-playbook"
+#alias a="ansible"
+#alias ap="ansible-playbook"
 # ALIAS COMMANDS
-alias ls="exa --icons --group-directories-first"
-alias ll="exa --icons --group-directories-first -l"
+#alias ls="exa --icons --group-directories-first"
+#alias ll="exa --icons --group-directories-first -l"
 alias grep="grep --color"
 alias gd="git checkout develop"
 alias gs="git checkout staging"
