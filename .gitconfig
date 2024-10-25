@@ -1,0 +1,5 @@
+[user]
+        name = Neil Soult
+        email = neil.soult@gmail.com
+[pull]
+        rebase = false

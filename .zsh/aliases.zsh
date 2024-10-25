@@ -1,14 +1,17 @@
 # Alias
 # ---
-#alias a="ansible"
-#alias ap="ansible-playbook"
+alias a="ansible"
+alias ap="ansible-playbook"
 # ALIAS COMMANDS
 #alias ls="exa --icons --group-directories-first"
 #alias ll="exa --icons --group-directories-first -l"
 alias grep="grep --color"
+# git
 alias gd="git checkout develop"
 alias gs="git checkout staging"
 alias gm="git checkout master"
+# pnpm
+alias pn="pnpm"
 # Crexi
 fnd-make() {
     git checkout -b FND-"$1";
