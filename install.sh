@@ -8,7 +8,8 @@ cp ./.gitconfig ~
 # Oh My Zsh!
 echo "download oh my zsh"
 echo dirname "$0"
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+sh -c "$(wget -O- https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh)"
+sudo sh -c "$(wget -O- https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)"
 echo "copy configs"
 cp ./.zshrc ~
 cp ./zshenv ~
@@ -21,6 +22,6 @@ sudo unzip RobotoMono.zip
 sudo rm RobotoMono.zip && cd ~
 # Starship
 echo "download starship"
-curl -sS https://starship.rs/install.sh -y -f | sh
+sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
 echo dirname "$0"
 cp -r ./.config ~
