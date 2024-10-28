@@ -7,6 +7,7 @@ echo "Copying git config"
 cp ./.gitconfig ~
 # Oh My Zsh!
 echo "download oh my zsh"
+echo dirname "$0"
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 echo "copy configs"
 cp ./.zshrc ~
@@ -21,5 +22,5 @@ sudo rm RobotoMono.zip && cd ~
 # Starship
 echo "download starship"
 curl -sS https://starship.rs/install.sh -y -f | sh
-echo ls -al
+echo dirname "$0"
 cp -r ./.config ~
