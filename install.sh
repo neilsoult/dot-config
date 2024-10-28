@@ -3,7 +3,6 @@
 # apt
 # sudo apt-get update && sudo apt-get install git zsh wget unzip curl
 # Git
-echo ls -al
 echo "Copying git config"
 cp ./.gitconfig ~
 # Oh My Zsh!
@@ -21,5 +20,6 @@ sudo unzip RobotoMono.zip
 sudo rm RobotoMono.zip && cd ~
 # Starship
 echo "download starship"
-curl -sS https://starship.rs/install.sh --yes | sh
+curl -sS https://starship.rs/install.sh -y -f | sh
+echo ls -al
 cp -r ./.config ~
