@@ -8,7 +8,7 @@ cp ./.gitconfig ~
 # Oh My Zsh!
 echo "download oh my zsh"
 echo dirname "$0"
-sudo sh -c "$(wget -qO- https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh)"
+sudo sh -c "$(wget -O- https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh)"
 # sudo sh -c "$(wget -qO https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)"
 echo "copy configs"
 cp ./.zshrc ~
@@ -25,3 +25,4 @@ echo "download starship"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
 echo dirname "$0"
 cp -r ./.config ~
+sudo npm i -g pnpm@9.12.2
