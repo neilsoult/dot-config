@@ -13,6 +13,7 @@ echo "copy configs"
 cp .zshrc ~
 cp .zshenv ~
 cp -r .zsh ~
+cp -r .config ~
 # Nerd Fonts
 echo "download and install nerdfonts"
 sudo mkdir -p /usr/share/fonts && cd /usr/share/fonts
@@ -22,5 +23,4 @@ sudo rm RobotoMono.zip && cd ~
 # Starship
 echo "download starship"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
-cp -r .config ~
 sudo npm i -g pnpm@9.12.2
