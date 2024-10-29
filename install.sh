@@ -23,4 +23,6 @@ sudo rm RobotoMono.zip && cd ~
 # Starship
 echo "download starship"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
+# pnpm
+echo "install pnpm"
 sudo npm i -g pnpm@9.12.2
