@@ -2,6 +2,8 @@
 
 # apt
 # sudo apt-get update && sudo apt-get install git zsh wget unzip curl
+# update hosts file
+sudo echo "127.0.0.1 www.crexi.local" >> /etc/hosts
 # Git
 echo "Copying git config"
 cp .gitconfig ~
