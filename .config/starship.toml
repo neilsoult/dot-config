@@ -4,10 +4,14 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
-# Change the default prompt format
+# Ensure continuation line behavior is clear
+continuation_prompt = "▶▶ "
+
+# Change the default prompt format with explicit newline
 format = """\
 [╭╴](238)$env_var\
-$all[╰─](238)$character"""
+$all\
+[╰─](238)$character"""
 
 # Change the default prompt characters
 [character]
@@ -45,19 +49,22 @@ style = "bold green"
 
 [git_status]
 format = '[\($all_status$ahead_behind\)]($style) '
-style = "bold green"
-conflicted = "🏳"
-up_to_date = " "
-untracked = " "
+style = "bold white"
+conflicted = "[🏳](red)"
+up_to_date = "[ ](green)"
+untracked = "[ ](009)"
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
 stashed = "󰏗 "
-modified = " "
+modified = "[ ](202)"
 staged = '[++\($count\)](green)'
 renamed = "󰖷 "
 deleted = " "
 
 [nodejs]
 format = "via [󰎙 $version](bold green) "
+disabled = true
+
+[dotnet]
 disabled = true
